@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelicula</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script>
+      function reanudar() {
+        document.querySelector("video").play();
+      }
+
+      function pausar() {
+        document.querySelector("video").pause();
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Jurassic World: Dominion</h1>
+
+      <nav>
+        <a href="">Trailer</a><a href="">Imagenes</a>
+        <a
+          href="https://es.wikipedia.org/wiki/Jurassic_World:_Dominion"
+          controls
+          autoplay
+          onmouseenter="reanudar()"
+          onmouseleave="pausar()"
+          >Wikipedia</a
+        >
+      </nav>
+    </header>
+    <main>
+      <div class="menu">
+        <video
+          width="30%"
+          src="video.mp4"
+          controls
+          autoplay
+          onmouseenter="reanudar()"
+          onmouseleave="pausar()"
+        ></video>
+        <figcaption>
+          <b> Es una próxima película de aventuras de ciencia ficción</b>
+          Dirigida por Colin Trevorrow
+        </figcaption>
+      </div>
+      <div id="gred2" class="menu">
+        <img src="imagen1.png" width="30%" loading="lazy" />
+        <figcaption>la nueva pelicula</figcaption>
+      </div>
+      <div id="gred3" class="menu">
+        <img src="imagen2.jpg" width="30%" loading="lazy" />
+        <figcaption>
+          <b>
+            Cierra la trilogía, pero los dinosaurios expandirán su universo en
+            el furuto</b
+          >
+        </figcaption>
+      </div>
+      <div id="gred4" class="menu">
+        <img src="imagen3.jpg" width="30%" loading="lazy" />
+        <figcaption><b> Parque jurásic</b></figcaption>
+        o
+      </div>
+    </main>
+    <footer>
+      <ul id="lista">
+        Sobre nosotros
+        <li>Aviso legal</li>
+        <li>Política de cookies</li>
+        <li>Política de privacidad</li>
+      </ul>
+      <p>2º DAW</p>
+      <p>Andrea Guillén Martínez</p>
+    </footer>
+  </body>
+</html>

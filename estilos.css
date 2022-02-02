@@ -1,0 +1,41 @@
+nav a {
+  color: black;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 50%;
+  flex: row;
+}
+main {
+  background-color: rgb(192, 192, 192);
+}
+.menu {
+  /* border-right-width: 12%; */
+  background-color: white;
+}
+.menu:hover {
+  transform: rotate(45deg);
+}
+
+@media (min-width: 700px) {
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 3%;
+}
+footer li {
+  display: inline;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+#lista {
+  list-style-type: circle; /* establece un circulo a la lista */
+}
+footer p {
+  margin-left: 38px;
+}
